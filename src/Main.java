@@ -21,8 +21,5 @@ public class Main {
         Engine engine = new EngineImpl(controller);
         engine.run();
 
-        System.out.println();
-
-
     }
 }

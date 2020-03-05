@@ -53,6 +53,7 @@ public class ControllerImpl implements Controller {
     public String fromToDate(LocalDate fromLocalDate, LocalDate toLocalDate) {
         StringBuilder sb = new StringBuilder();
 
+        toLocalDate = toLocalDate.plus(1, ChronoUnit.DAYS);
         while (fromLocalDate.isBefore(toLocalDate)) {
             sb.append(fromLocalDate);
             sb.append(" - ");

@@ -36,7 +36,8 @@ public class EngineImpl implements Engine {
             try {
                 result = processInput();
 
-                if (result.equals("Exit")) {
+                if (result.equals("exit")) {
+                    System.out.println("The program finished succsefly!");
                     break;
                 }
             } catch (NullPointerException | IllegalArgumentException | IOException e) {
@@ -62,11 +63,11 @@ public class EngineImpl implements Engine {
 
             String[] comand = this.reader.readLine().split("\\s+");
 
-            if (comand[0].equals("Find")) {
+            if (comand[0].equals("find")) {
                 System.out.println(controller.find(LocalDate.parse(comand[1])));
 
-            } else if (comand[0].equalsIgnoreCase("Exit")) {
-                result = "Exit";
+            } else if (comand[0].equalsIgnoreCase("exit")) {
+                result = "exit";
                 break;
 
             } else if (comand[0].equalsIgnoreCase("fromToDate")) {
