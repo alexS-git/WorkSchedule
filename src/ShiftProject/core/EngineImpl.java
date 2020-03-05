@@ -44,16 +44,20 @@ public class EngineImpl implements Engine {
                 result = e.getMessage();
             }
 
+            System.out.println(result);
             return;
         }
     }
 
     private String processInput() throws IOException {
+
+        System.out.println("Current shift today:");
         String shift = this.reader.readLine();
+        System.out.println("Range of the schedule:");
         LocalDate inputDate = LocalDate.parse(this.reader.readLine());
         LocalDate localDate = LocalDate.now();
 
-        String result = null;
+        String result;
 
         doSchedule(localDate, shift, inputDate);
 
@@ -61,6 +65,7 @@ public class EngineImpl implements Engine {
 
         while (true) {
 
+            System.out.println("Choose command:");
             String[] comand = this.reader.readLine().split("\\s+");
 
             if (comand[0].equals("find")) {

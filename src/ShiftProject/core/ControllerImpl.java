@@ -46,7 +46,16 @@ public class ControllerImpl implements Controller {
 
     @Override
     public String find(LocalDate localDate) {
-        return this.shiftRepository.find(localDate).getShift();
+
+        String res = "";
+
+        try {
+            res = this.shiftRepository.find(localDate).getShift();
+        } catch (NullPointerException e) {
+            res = "Date is out of range!";
+        }
+
+        return res;
     }
 
     @Override
