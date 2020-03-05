@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbe52857-41b9-4f04-9936-941c4477d9ee" name="Default Changelist" comment="">
+    <list default="true" id="fbe52857-41b9-4f04-9936-941c4477d9ee" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +75,14 @@
       <workItem from="1582654013076" duration="5042000" />
       <workItem from="1583226975051" duration="4073000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1583421566354</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583421566354</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -92,7 +100,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="589" y="114" key="CommitChangelistDialog2" timestamp="1583421662269">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="589" y="114" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583421662269" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1583421655219">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583421655219" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1583420887931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
