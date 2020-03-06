@@ -1,9 +1,14 @@
 package ShiftProject.core;
 
 import ShiftProject.core.interfaces.Controller;
-import ShiftProject.models.shifts.interfaces.Shift;
-import ShiftProject.repositores.interfaces.Repository;
-import ShiftProject.repositores.interfaces.localDateRepository;
+import ShiftProject.core.interfaces.Validator;
+import ShiftProject.modelShifts.BigShift;
+import ShiftProject.modelShifts.DayForRest;
+import ShiftProject.modelShifts.FirstShift;
+import ShiftProject.modelShifts.SecondShift;
+import ShiftProject.modelShifts.interfaces.Shift;
+import ShiftProject.repositores.interfaces.DateRepository;
+import ShiftProject.repositores.localDateDateRepositoryImpl;
 
 
 import java.time.LocalDate;
@@ -11,15 +16,24 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+import static ShiftProject.Constants.ConstantsImpl.*;
+
 public class ControllerImpl implements Controller {
     private Deque<Shift> shifts;
     private Deque<LocalDate> dates;
-    private Repository<Shift> shiftRepository;
+    private DateRepository<Shift> shiftDateRepository;
+    private Validator validator;
+    private static final Shift[] SHIFTS = {new SecondShift()
+            , new FirstShift()
+            , new BigShift()
+            , new DayForRest()
+    };
 
     public ControllerImpl() {
         this.shifts = new ArrayDeque<>();
         this.dates = new ArrayDeque<>();
-        this.shiftRepository = new localDateRepository();
+        this.shiftDateRepository = new localDateDateRepositoryImpl();
+        this.validator = new ValidatorImpl();
 
     }
 
@@ -30,7 +44,7 @@ public class ControllerImpl implements Controller {
             Shift shift = shifts.poll();
             LocalDate localDate = dates.poll();
 
-            shiftRepository.add(localDate, shift);
+            shiftDateRepository.add(localDate, shift);
         }
     }
 
@@ -47,12 +61,12 @@ public class ControllerImpl implements Controller {
     @Override
     public String find(LocalDate localDate) {
 
-        String res = "";
+        String res;
 
         try {
-            res = this.shiftRepository.find(localDate).getShift();
+            res = this.shiftDateRepository.find(localDate).getShift();
         } catch (NullPointerException e) {
-            res = "Date is out of range!";
+            res = DATE_IS_OUT_OF_RANGE;
         }
 
         return res;
@@ -65,7 +79,7 @@ public class ControllerImpl implements Controller {
         toLocalDate = toLocalDate.plus(1, ChronoUnit.DAYS);
         while (fromLocalDate.isBefore(toLocalDate)) {
             sb.append(fromLocalDate);
-            sb.append(" - ");
+            sb.append(" -> ");
             sb.append(find(fromLocalDate));
             sb.append(System.lineSeparator());
             fromLocalDate = fromLocalDate.plus(1, ChronoUnit.DAYS);
@@ -74,4 +88,59 @@ public class ControllerImpl implements Controller {
         return sb.toString().trim();
     }
 
+
+    public void doSchedule(LocalDate localDate, String shift, LocalDate inputDate) {
+        Shift shiftType;
+
+        switch (shift) {
+            case "FirstShift":
+                shiftType = new FirstShift();
+                addShift(shiftType);
+                addLocalDate(localDate);
+
+                iterShifts(localDate, inputDate, 2);
+
+                break;
+
+            case "SecondShift":
+                shiftType = new SecondShift();
+                addShift(shiftType);
+                addLocalDate(localDate);
+
+                iterShifts(localDate, inputDate, 1);
+
+                break;
+
+            case "BigShift":
+                shiftType = new BigShift();
+                addShift(shiftType);
+                addLocalDate(localDate);
+
+                iterShifts(localDate, inputDate, 3);
+                break;
+
+            case "RestDay":
+                shiftType = new DayForRest();
+                addShift(shiftType);
+                addLocalDate(localDate);
+
+                iterShifts(localDate, inputDate, 0);
+                break;
+
+        }
+    }
+
+    public void iterShifts(LocalDate localDate, LocalDate inputDate, int count) {
+
+        while (localDate.isBefore(inputDate)) {
+            localDate = localDate.plus(1, ChronoUnit.DAYS);
+            addLocalDate(localDate);
+
+            addShift(SHIFTS[count++]);
+
+            if (count == SHIFTS.length) {
+                count = 0;
+            }
+        }
+    }
 }

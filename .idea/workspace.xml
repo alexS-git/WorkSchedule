@@ -2,7 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbe52857-41b9-4f04-9936-941c4477d9ee" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/ShiftProject/Constants/ConstantsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShiftProject/core/ValidatorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShiftProject/core/interfaces/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShiftProject/modelShifts/model/BaseShift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/user.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workSchedule/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/ControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/ControllerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/EngineImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/EngineImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/interfaces/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/interfaces/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/models/shifts/BaseShift.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/models/shifts/BigShift.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/models/shifts/DayForRest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/models/shifts/FirstShift.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/models/shifts/SecondShift.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/models/shifts/interfaces/Shift.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/repositores/interfaces/Repository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/repositores/interfaces/localDateRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/core/ControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/core/ControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/core/EngineImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/core/EngineImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/core/interfaces/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/core/interfaces/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/models/shifts/BaseShift.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/models/shifts/BigShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/modelShifts/BigShift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/models/shifts/DayForRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/modelShifts/DayForRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/models/shifts/FirstShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/modelShifts/FirstShift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/models/shifts/SecondShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/modelShifts/SecondShift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/models/shifts/interfaces/Shift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/modelShifts/interfaces/Shift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/repositores/interfaces/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/repositores/interfaces/DateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/repositores/interfaces/localDateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/repositores/localDateDateRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +56,6 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
   </component>
   <component name="ProjectId" id="1Yi8AgVarZrWUoAE3qFwlrMCOrm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -118,10 +141,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" width="816" height="729" key="#Intentions" timestamp="1583487162477">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" width="816" height="729" key="#Intentions/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583487162477" />
     <state x="552" y="178" key="#Notifications" timestamp="1583481089377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583481089377" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1583503276740">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583503276740" />
+    <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583497224133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583497224133" />
     <state x="589" y="114" key="CommitChangelistDialog2" timestamp="1583421662269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -134,38 +169,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583481077495" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1583420887931">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1583505863560">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583420887931" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1583420887931">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583505863560" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1583505863560">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583420887931" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1583420887931">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583505863560" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1583505863560">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583420887931" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1583420887931">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583505863560" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1583505863560">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583420887931" />
-    <state width="1877" height="298" key="GridCell.Tab.1.bottom" timestamp="1583419059208">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583505863560" />
+    <state width="1877" height="298" key="GridCell.Tab.1.bottom" timestamp="1583504250641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583419059208" />
-    <state width="1877" height="298" key="GridCell.Tab.1.center" timestamp="1583419059208">
+    <state width="1877" height="298" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583504250641" />
+    <state width="1877" height="298" key="GridCell.Tab.1.center" timestamp="1583504250641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583419059208" />
-    <state width="1877" height="298" key="GridCell.Tab.1.left" timestamp="1583419059208">
+    <state width="1877" height="298" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583504250641" />
+    <state width="1877" height="298" key="GridCell.Tab.1.left" timestamp="1583504250641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583419059208" />
-    <state width="1877" height="298" key="GridCell.Tab.1.right" timestamp="1583419059208">
+    <state width="1877" height="298" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583504250641" />
+    <state width="1877" height="298" key="GridCell.Tab.1.right" timestamp="1583504250641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583419059208" />
+    <state width="1877" height="298" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583504250641" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1583481079985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

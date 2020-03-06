@@ -1,23 +1,17 @@
-package ShiftProject.repositores.interfaces;
+package ShiftProject.repositores;
 
-import ShiftProject.models.shifts.interfaces.Shift;
+import ShiftProject.modelShifts.interfaces.Shift;
+import ShiftProject.repositores.interfaces.DateRepository;
 
 import java.time.LocalDate;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class localDateRepository implements Repository<Shift> {
+public class localDateDateRepositoryImpl implements DateRepository<Shift> {
     private Map<LocalDate, Shift> dates;
 
-    public localDateRepository() {
+    public localDateDateRepositoryImpl() {
         this.dates = new HashMap<>();
-    }
-
-    @Override
-    public Collection<Shift> getShift() {
-        return Collections.unmodifiableCollection(this.dates.values());
     }
 
     @Override

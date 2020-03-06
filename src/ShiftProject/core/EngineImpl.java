@@ -2,139 +2,114 @@ package ShiftProject.core;
 
 import ShiftProject.core.interfaces.Controller;
 import ShiftProject.core.interfaces.Engine;
-import ShiftProject.models.shifts.*;
-import ShiftProject.models.shifts.interfaces.Shift;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
+
+import static ShiftProject.Constants.ConstantsImpl.*;
 
 public class EngineImpl implements Engine {
     private Controller controller;
     private BufferedReader reader;
-    private static final Shift[] SHIFTS = {new SecondShift()
-            , new FirstShift()
-            , new BigShift()
-            , new DayForRest()
-    };
-
+    private LocalDate currentDate;
+    private LocalDate inputDate;
+    private String shift;
 
     public EngineImpl(Controller controller) {
         this.controller = controller;
         this.reader = new BufferedReader(new InputStreamReader(System.in));
+        this.currentDate = LocalDate.now();
 
     }
-
 
     @Override
     public void run() {
 
+        try {
+            processInput();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        generedSchedule();
+
         while (true) {
-            String result = null;
+            String result;
+
             try {
-                result = processInput();
+                result = processOutput();
 
                 if (result.equals("exit")) {
-                    System.out.println("The program finished succsefly!");
-                    break;
+                    System.out.println(PROGRAM_FINISHED_CORRECT);
+                    return;
                 }
             } catch (NullPointerException | IllegalArgumentException | IOException e) {
                 result = e.getMessage();
             }
 
             System.out.println(result);
-            return;
         }
     }
 
-    private String processInput() throws IOException {
+    private void processInput() throws IOException {
 
-        System.out.println("Current shift today:");
-        String shift = this.reader.readLine();
-        System.out.println("Range of the schedule:");
-        LocalDate inputDate = LocalDate.parse(this.reader.readLine());
-        LocalDate localDate = LocalDate.now();
+        System.out.println(CURRENT_SHIFT_TODAY);
+        shift = this.reader.readLine();
+
+        System.out.println(SCHEDULE_RANGE);
+        while (true) {
+            try {
+                inputDate = LocalDate.parse(this.reader.readLine());
+                break;
+            } catch (Exception e) {
+                System.out.println(INVALID_DATE);
+                System.out.println(REPEAT_DATE);
+            }
+        }
+
+    }
+
+    private void generedSchedule() {
+
+        controller.doSchedule(currentDate, shift, inputDate);
+
+        controller.schedule();
+    }
+
+    private String processOutput() throws IOException {
 
         String result;
 
-        doSchedule(localDate, shift, inputDate);
+        System.out.println(CHOOSE_COMMAND);
+        String[] comands = this.reader.readLine().split("\\s+");
 
-        controller.schedule();
+        String currentCommand = comands[0];
 
-        while (true) {
-
-            System.out.println("Choose command:");
-            String[] comand = this.reader.readLine().split("\\s+");
-
-            if (comand[0].equals("find")) {
-                System.out.println(controller.find(LocalDate.parse(comand[1])));
-
-            } else if (comand[0].equalsIgnoreCase("exit")) {
-                result = "exit";
+        switch (currentCommand) {
+            case "find":
+                result = comands[1] + " -> " + controller.find(LocalDate.parse(comands[1]));
                 break;
 
-            } else if (comand[0].equalsIgnoreCase("fromToDate")) {
-                System.out.println(controller.fromToDate(LocalDate.parse(comand[1])
-                        , LocalDate.parse(comand[2])));
-            }
+            case "fromToDate":
+                result = controller.fromToDate(LocalDate.parse(comands[1]),
+                        LocalDate.parse(comands[2]));
+                break;
+
+            case "exit":
+                result = EXIT;
+                break;
+
+            case "getShift":
+                //TODO: wait for implementation!!!
+                result = "asd";
+                break;
+            default:
+                result = INVALID_COMMAND;
+                break;
         }
+
         return result;
-    }
-
-    private void doSchedule(LocalDate localDate, String shift, LocalDate inputDate) {
-        Shift shiftType;
-
-        switch (shift) {
-            case "FirstShift":
-                shiftType = new FirstShift();
-                controller.addShift(shiftType);
-                controller.addLocalDate(localDate);
-
-                iterShifts(localDate, inputDate, 2);
-
-                break;
-
-            case "SecondShift":
-                shiftType = new SecondShift();
-                controller.addShift(shiftType);
-                controller.addLocalDate(localDate);
-
-                iterShifts(localDate, inputDate, 1);
-
-                break;
-
-            case "BigShift":
-                shiftType = new BigShift();
-                controller.addShift(shiftType);
-                controller.addLocalDate(localDate);
-
-                iterShifts(localDate, inputDate, 3);
-                break;
-
-            case "RestDay":
-                shiftType = new DayForRest();
-                controller.addShift(shiftType);
-                controller.addLocalDate(localDate);
-
-                iterShifts(localDate, inputDate, 0);
-                break;
-
-        }
-    }
-
-    private void iterShifts(LocalDate localDate, LocalDate inputDate, int count) {
-
-        while (localDate.isBefore(inputDate)) {
-            localDate = localDate.plus(1, ChronoUnit.DAYS);
-            controller.addLocalDate(localDate);
-
-            controller.addShift(SHIFTS[count++]);
-
-            if (count == SHIFTS.length) {
-                count = 0;
-            }
-        }
     }
 }

@@ -1,10 +1,8 @@
 package ShiftProject.repositores.interfaces;
 
 import java.time.LocalDate;
-import java.util.Collection;
 
-public interface Repository<T> {
-    Collection<T> getShift();
+public interface DateRepository<T> {
 
     void add(LocalDate localDate ,T model);
 
