@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbe52857-41b9-4f04-9936-941c4477d9ee" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/ControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/ControllerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/EngineImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/EngineImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/ValidatorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/ValidatorImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/interfaces/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/interfaces/Validator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShiftProject/core/ControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/core/ControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShiftProject/core/ValidatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/core/ValidatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShiftProject/core/interfaces/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/core/interfaces/Validator.java" afterDir="false" />
-    </list>
+    <list default="true" id="fbe52857-41b9-4f04-9936-941c4477d9ee" name="Default Changelist" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
