@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbe52857-41b9-4f04-9936-941c4477d9ee" name="Default Changelist" comment="update" />
+    <list default="true" id="fbe52857-41b9-4f04-9936-941c4477d9ee" name="Default Changelist" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workSchedule/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/ControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/ControllerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/ValidatorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workSchedule/ShiftProject/core/ValidatorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/Constants/ConstantsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/Constants/ConstantsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/core/EngineImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/core/EngineImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/core/ValidatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/core/ValidatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShiftProject/core/interfaces/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftProject/core/interfaces/Validator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +52,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -101,89 +115,83 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" width="816" height="729" key="#Intentions" timestamp="1583487162477">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1593172890938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" width="816" height="729" key="#Intentions/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583487162477" />
-    <state x="552" y="178" key="#Notifications" timestamp="1583481089377">
+    <state x="552" y="178" key="#Project_Structure/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593172890938" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1593178743292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Notifications/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583481089377" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1583503276740">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593178743292" />
+    <state x="753" y="350" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1593178308703">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583503276740" />
-    <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583497224133">
+    <state x="753" y="350" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593178308703" />
+    <state width="390" height="466" key="DebuggerActiveHint" timestamp="1585575949517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583497224133" />
-    <state x="589" y="114" key="CommitChangelistDialog2" timestamp="1583421662269">
+    <state width="390" height="466" key="DebuggerActiveHint/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585575949517" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1593182563483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="589" y="114" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583421662269" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1583421655219">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593182563483" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1593182563483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="86" key="DiffContextDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583421655219" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1583481077495">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593182563483" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1593182563483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583481077495" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1583507368087">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593182563483" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1593182563483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583507368087" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1583507368086">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593182563483" />
+    <state width="1877" height="298" key="GridCell.Tab.1.bottom" timestamp="1593181629333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583507368086" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1583507368086">
+    <state width="1877" height="298" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593181629333" />
+    <state width="1877" height="298" key="GridCell.Tab.1.center" timestamp="1593181629332">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583507368086" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1583507368087">
+    <state width="1877" height="298" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593181629332" />
+    <state width="1877" height="298" key="GridCell.Tab.1.left" timestamp="1593181629332">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583507368087" />
-    <state width="1877" height="298" key="GridCell.Tab.1.bottom" timestamp="1583507203356">
+    <state width="1877" height="298" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593181629332" />
+    <state width="1877" height="298" key="GridCell.Tab.1.right" timestamp="1593181629332">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583507203356" />
-    <state width="1877" height="298" key="GridCell.Tab.1.center" timestamp="1583507203355">
+    <state width="1877" height="298" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593181629332" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585577785717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583507203355" />
-    <state width="1877" height="298" key="GridCell.Tab.1.left" timestamp="1583507203355">
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585577785717" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1593180858900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583507203355" />
-    <state width="1877" height="298" key="GridCell.Tab.1.right" timestamp="1583507203355">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="298" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583507203355" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1583481079985">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583481079985" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583414399002">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583414399002" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593180858900" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ShiftProject/core/EngineImpl.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ShiftProject/core/ValidatorImpl.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="asd" />
+        <watch expression="asd" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

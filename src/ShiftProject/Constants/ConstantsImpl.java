@@ -9,8 +9,11 @@ public class ConstantsImpl {
     public static final String CHOOSE_COMMAND = "Choose command:";
     public static final String EXIT = "exit";
     public static final String INVALID_COMMAND = "Invalid command!";
+    public static final String ALL_COMMANDS = "Please choose one of these commands: find, fromToDate, getShift";
     public static final String REPEAT_DATE = "Please repeat the date:";
     public static final String INVALID_DATE = "Invalid date! Correct format is YYYY-MM-DD!";
+    public static final String INVALID_SHIFT = "Invalid shift!";
+    public static final String REPEAT_SHIFT = "Please repeat the shift:";
 
     //Use in ValidatorImpl
     public static final String DATE_IS_OUT_OF_RANGE  = "Date is out of range!";

@@ -8,8 +8,8 @@ import java.time.LocalDate;
 public interface Validator {
     void validateInputDate();
 
-    String validateRangeOfTheFindDay(LocalDate localDate,  DateRepository<Shift> shiftDateRepository);
+    String validateRangeOfTheFindDay(LocalDate localDate, DateRepository<Shift> shiftDateRepository);
 
-
+    String validateShift(String shift);
 
 }

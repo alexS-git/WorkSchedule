@@ -3,6 +3,7 @@ package ShiftProject.core;
 import ShiftProject.core.interfaces.Controller;
 import ShiftProject.core.interfaces.Engine;
 
+import javax.xml.validation.Validator;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -16,11 +17,13 @@ public class EngineImpl implements Engine {
     private LocalDate currentDate;
     private LocalDate inputDate;
     private String shift;
+    private ValidatorImpl validator;
 
     public EngineImpl(Controller controller) {
         this.controller = controller;
         this.reader = new BufferedReader(new InputStreamReader(System.in));
         this.currentDate = LocalDate.now();
+        this.validator = new ValidatorImpl();
 
     }
 
@@ -55,8 +58,19 @@ public class EngineImpl implements Engine {
 
     private void processInput() throws IOException {
 
+
         System.out.println(CURRENT_SHIFT_TODAY);
-        shift = this.reader.readLine();
+        while (true) {
+            shift = this.reader.readLine();
+
+            shift = validator.validateShift(shift);
+
+            if (!shift.equals("0")) {
+                break;
+            }
+            System.out.println(INVALID_SHIFT);
+            System.out.println(REPEAT_SHIFT);
+        }
 
         System.out.println(SCHEDULE_RANGE);
         while (true) {
@@ -68,7 +82,6 @@ public class EngineImpl implements Engine {
                 System.out.println(REPEAT_DATE);
             }
         }
-
     }
 
     private void generedSchedule() {
@@ -106,7 +119,7 @@ public class EngineImpl implements Engine {
                 result = "asd";
                 break;
             default:
-                result = INVALID_COMMAND;
+                result = INVALID_COMMAND + System.lineSeparator() + ALL_COMMANDS;
                 break;
         }
 
