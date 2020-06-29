@@ -3,7 +3,6 @@ package ShiftProject.core;
 import ShiftProject.core.interfaces.Controller;
 import ShiftProject.core.interfaces.Engine;
 
-import javax.xml.validation.Validator;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -20,11 +19,11 @@ public class EngineImpl implements Engine {
     private ValidatorImpl validator;
 
     public EngineImpl(Controller controller) {
+
         this.controller = controller;
         this.reader = new BufferedReader(new InputStreamReader(System.in));
         this.currentDate = LocalDate.now();
         this.validator = new ValidatorImpl();
-
     }
 
     @Override
@@ -99,6 +98,8 @@ public class EngineImpl implements Engine {
         String[] comands = this.reader.readLine().split("\\s+");
 
         String currentCommand = comands[0];
+
+
 
         switch (currentCommand) {
             case "find":
